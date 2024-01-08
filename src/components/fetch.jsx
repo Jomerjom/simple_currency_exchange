@@ -33,6 +33,8 @@ export const Fetch = () => {
 
   return (
     <div className="flex flex-col gap-2 p-4 rounded bg-[#202124] w-fit text-[#bdc1c6]">
+      <p className="text-[#9aa0a6]">1 Euro equals</p>
+      <p className="text-[#e8eaed] text-4xl pb-3">{selectedCurrency && rates[selectedCurrency]?.toFixed(2)} {selectedCurrency}</p>
       <div className="flex gap-2 rounded border border-[#bdc1c6] px-4 py-2">
         <input
           type="number"
