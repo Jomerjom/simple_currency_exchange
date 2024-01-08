@@ -10,7 +10,8 @@ export const Fetch = () => {
 
   useEffect(() => {
     fetch(
-      "http://data.fixer.io/api/latest?access_key=55a1dffac9be5b10fdccf4f8ccc7ed90&base=EUR"
+      // "http://data.fixer.io/api/latest?access_key=55a1dffac9be5b10fdccf4f8ccc7ed90&base=EUR"
+      process.env.REACT_APP_API_URL
     )
       .then((response) => response.json())
       .then((json) => setData(json))
